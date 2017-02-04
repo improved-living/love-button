@@ -14,3 +14,62 @@ footer {
   position: relative;
   top: 300px;
 }
+
+/*Slideshow*/
+.bss-slides {
+  position: relative;
+  display: block;
+}
+
+.bss-slides figure{
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.bss-slides figure:first-child {
+  position: relative;
+}
+
+.bss-slides figure img {
+  opacity: 0;
+  transition: opacity 1.2s;
+}
+
+.bss-slides .bss-show img {
+  opacity: 1;
+}
+
+.bss-slides figcaption {
+  position: absolute;
+  bottom: .75em;
+  right: .35em;
+  opacity: 0;
+  transition: opacity 1.2s;
+}
+
+.bss-slides .bss-show figcaption {
+  z-index: 2;
+  opacity: 1;
+}
+
+.bss-next, .bss-prev {
+  position: absolute;
+  top: 50%;
+  z-index: 1;
+  opacity: 0.5;
+  user-select: none;
+}
+
+.bss-next:hover, .bss-prev:hover {
+  cursor: pointer;
+  opacity: 1;
+}
+
+.bss-next {
+  right: 0;
+}
+
+.bss-prev {
+  left: 0;
+}
