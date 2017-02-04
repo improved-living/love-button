@@ -1,0 +1,16 @@
+nav, section, footer {
+  border: 2px solid black;
+  height: 100px;
+  width: 100%;
+}
+
+body {
+  border: 2px solid black;
+  height: 700px;
+  width: 100%;
+}
+
+footer {
+  position: relative;
+  top: 300px;
+}
