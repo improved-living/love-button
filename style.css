@@ -1,11 +1,11 @@
 nav, section, footer {
   border: 2px solid black;
-  height: 100px;
+  height: 125px;
   width: 100%;
 }
 
 body {
-  border: 2px solid black;
+  background-color: black;
   height: 700px;
   width: 100%;
 }
@@ -18,6 +18,31 @@ footer {
 section figure {
   width: 100%;
   height: 400px;
+}
+
+#nav-wrapper {
+  position: relative;
+}
+
+.carousel {
+  position: absolute;
+  top: 0;
+}
+
+#bootstrap-overrides .navbar-nav>li {
+  padding: 10% 0 0 0;
+}
+
+#bootstrap-overrides .navbar-nav>li>a {
+  color: white;
+}
+
+#bootstrap-overrides .navbar {
+  position: absolute;
+  top: 2%;
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.60);
+  border-color: rgba(255, 255, 255, 0);
 }
 
 /*Slideshow*/
